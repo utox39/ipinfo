@@ -10,7 +10,7 @@
 
 char* to_ip_addr(unsigned int ip_value)
 {
-    char buffer[15];
+    char buffer[16];
     int written = snprintf(buffer, sizeof(buffer), "%u.%u.%u.%u",
                (ip_value >> 24) & 0xFF,
                (ip_value >> 16) & 0xFF,
