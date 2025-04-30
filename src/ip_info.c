@@ -19,11 +19,15 @@ char* to_ip_addr(unsigned int ip_value)
     );
 
     if (written < 0 || written >= sizeof(buffer)) {
+        fprintf(stderr, "ipinfo: memory error\n");
         return NULL;
     }
 
     char *ip = (char*) malloc((written + 1) * sizeof(char));
-    if (ip == NULL) return NULL;
+    if (ip == NULL) {
+        fprintf(stderr, "ipinfo: memory error\n");
+        return NULL;
+    }
 
     memcpy(ip, buffer, written);
     ip[written] = '\0';
