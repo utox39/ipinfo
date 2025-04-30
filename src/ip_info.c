@@ -48,7 +48,8 @@ char get_address_class(unsigned int ip_value)
         return 'E';
 }
 
-int is_host_up(const char* ip, int port, int timeout_sec) {
+int is_host_up(const char* ip, int port, int timeout_sec)
+{
     int sock = socket(AF_INET, SOCK_STREAM, 0);
     if (sock < 0) return 0;
 
