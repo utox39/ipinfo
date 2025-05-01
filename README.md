@@ -16,7 +16,7 @@ ipinfo analyzes the provided ip and provides information about the class and act
 
 ```console
 # Clone the repo
-$ git clone https://github.com/utox39/ipinfo
+$ git clone https://github.com/utox39/ipinfo.git
 
 # cd to the path
 $ cd path/to/ipinfo
