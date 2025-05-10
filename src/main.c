@@ -18,6 +18,7 @@ int main(int argc, char* argv[])
 
     ip_value = parse_fn(argv[2]);
 
+    // TODO: fix comparison...I'm dumb
     if (ip_value == -1) {
         return EXIT_FAILURE;
     }
